@@ -1,13 +1,30 @@
+.fixed-menu{
+  display: block;
+  background-color: pink;
+  height: 100px;
+  width: 100%;
+  margin: 0;
+  box-sizing: border-box;
+
+}
+
+#main{
+  display: flex;
+  box-sizing: border-box;
+  width: auto;
+
+
+}
+
+
+
 .navbar {
-    display: inline-flex;
+    display: flex;
     align-items: center;
     overflow: hidden;
-    background-color: #333;
     position: fixed;
     top: 0;
     width: 100%;
-    margin-left: -10px;
-    border: solid 1px blue;
     height: 69px;
     border-bottom: 1px solid seashell;
     font-family: helvetica;
@@ -15,11 +32,14 @@
     color: seashell;
     background-color: black;
     opacity: 0.9;
+    box-sizing: border-box;
+    z-index: 5;
+    justify-content: center;
 }
 
   .navbar a {
     float: left;
-    display: inline-block;
+    display: block;
     color: seashell;
     font-family: helvetica;
     font-size: 22px;
@@ -29,6 +49,7 @@
 .navbar img{
   height: 50px;
   margin-left: 10px;
+  align-items: flex-start;
 }
 
 .logo{
@@ -37,14 +58,17 @@
   font-size: 22px;
   color: seashell;
   background-color: black;
+  margin: 0;
+  width: auto;
   opacity: 0.9;
 }
 
 .nav-container{
-  display: inline-flex;
+  display: flex;
   justify-content: flex-end;
-  width: 100%;
-  margin: auto;
+  width: auto;
+
+
 }
 
 .nav-item-links{
@@ -57,10 +81,68 @@ background-color: black;
 opacity: 0.9;
 }
 
+.background-image-flex-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .main-background-image{
+  display: flex;
+  border: 1px solid blue;
   background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg");
   background-repeat: no-repeat;
-  background-size: 100%;
-  height: 100%;
+  background-size: cover;
+  background-position: center;
+  height: 700px;
+  width: 1200px;
+  align-items: center;
+  text-align: center;
+  margin: 10px;
+}
+
+.main-content-headline{
+  background-color: black;
   width: 100%;
+  font-family: helvetica;
+  font-size: 22px;
+  color: seashell;
+  background-color: black;
+  opacity: 0.9;
+  text-align: center;
+}
+
+.second-headline{
+  text-align: center;
+  background-color: black;
+  width: 100%;
+  font-family: helvetica;
+  font-size: 22px;
+  color: seashell;
+  background-color: black;
+  opacity: 0.9;
+}
+
+.images{
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  width: 1000px;
+  margin: 0;
+  border: 1px solid blue;
+  background-color: black;
+  width: 100%;
+  font-family: helvetica;
+  font-size: 22px;
+  color: seashell;
+  background-color: black;
+  opacity: 0.9;
+  padding-top: 30px;
+  justify-content: space-around;
+
+
+}
+
+.img1{
+
 }
